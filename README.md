@@ -74,6 +74,39 @@ Each section is modular and can be easily customized:
 - Modify styles in `style.css`
 - Add functionality in `script.js`
 
+## Deployment
+
+### Vercel (Recommended) - Issue Fixed!
+The repo now includes `vercel.json` for proper deployment:
+
+1. **Import GitHub repo to Vercel**
+2. **No build configuration needed** - auto-detects as static site
+3. **Deploy automatically** - works out of the box
+
+**Vercel Fixes Included:**
+- ✅ `vercel.json` configuration file
+- ✅ Proper static file routing  
+- ✅ SPA support with fallback to index.html
+- ✅ Optimized caching headers
+- ✅ Node.js version specification
+
+### GitHub Pages
+1. Go to repository Settings → Pages
+2. Select source branch (`main` or `master`)
+3. Site will be live at: `https://saqlain-076.github.io/whitepace-landing-page`
+
+### Netlify
+1. Connect GitHub repository to Netlify
+2. Build settings: 
+   - Build command: `echo "Static site"`
+   - Publish directory: `/`
+3. Auto-deploy on git push
+
+### Manual Hosting
+Upload these files to any web server:
+- `index.html`, `style.css`, `script.js`
+- All other files except `node_modules/`
+
 ## Browser Support
 
 - Chrome (latest)
