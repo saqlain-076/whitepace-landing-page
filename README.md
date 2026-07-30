@@ -76,19 +76,21 @@ Each section is modular and can be easily customized:
 
 ## Deployment
 
-### Vercel (Recommended) - Issue Fixed!
-The repo now includes `vercel.json` for proper deployment:
+### Vercel (Recommended) - Simplified!
+**No configuration files needed** for static HTML sites:
 
-1. **Import GitHub repo to Vercel**
-2. **No build configuration needed** - auto-detects as static site
-3. **Deploy automatically** - works out of the box
+1. **Go to [vercel.com](https://vercel.com) and login**
+2. **Click "New Project"**
+3. **Import from GitHub:** `saqlain-076/whitepace-landing-page`
+4. **Click "Deploy"** - That's it!
 
-**Vercel Fixes Included:**
-- ✅ `vercel.json` configuration file
-- ✅ Proper static file routing  
-- ✅ SPA support with fallback to index.html
-- ✅ Optimized caching headers
-- ✅ Node.js version specification
+**Vercel will automatically:**
+- ✅ Detect it as a static site
+- ✅ Serve `index.html` as the main page
+- ✅ Handle all CSS, JS, and asset files
+- ✅ Provide HTTPS and global CDN
+
+**No vercel.json needed** - Simple HTML sites work out of the box!
 
 ### GitHub Pages
 1. Go to repository Settings → Pages
@@ -96,16 +98,24 @@ The repo now includes `vercel.json` for proper deployment:
 3. Site will be live at: `https://saqlain-076.github.io/whitepace-landing-page`
 
 ### Netlify
-1. Connect GitHub repository to Netlify
-2. Build settings: 
-   - Build command: `echo "Static site"`
+1. **Drag & Drop:** Just drag the project folder to netlify.com
+2. **OR Git Deploy:** Connect GitHub repo
+3. **Settings:** 
+   - Build command: (leave empty)
    - Publish directory: `/`
-3. Auto-deploy on git push
 
 ### Manual Hosting
 Upload these files to any web server:
 - `index.html`, `style.css`, `script.js`
 - All other files except `node_modules/`
+
+## Troubleshooting Vercel
+
+If you still face issues:
+1. **Delete any existing vercel.json** (not needed for static sites)
+2. **Ensure index.html is in root directory** ✅
+3. **Check file names are lowercase** ✅
+4. **No build process required** for HTML/CSS/JS sites
 
 ## Browser Support
 
