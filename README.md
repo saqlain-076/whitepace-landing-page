@@ -76,48 +76,46 @@ Each section is modular and can be easily customized:
 
 ## Deployment
 
-### Vercel (Recommended) - Simplified!
-**No configuration files needed** for static HTML sites:
+### Vercel (Fixed for 404 Error!)
+
+**Step-by-Step Vercel Deployment:**
 
 1. **Go to [vercel.com](https://vercel.com) and login**
-2. **Click "New Project"**
+2. **Click "New Project"**  
 3. **Import from GitHub:** `saqlain-076/whitepace-landing-page`
-4. **Click "Deploy"** - That's it!
+4. **Project Settings:**
+   - Framework Preset: `Other`
+   - Build Command: (leave empty)
+   - Output Directory: (leave empty) 
+   - Install Command: `npm install` (optional)
+5. **Click "Deploy"**
 
-**Vercel will automatically:**
-- ✅ Detect it as a static site
-- ✅ Serve `index.html` as the main page
-- ✅ Handle all CSS, JS, and asset files
-- ✅ Provide HTTPS and global CDN
+**The `vercel.json` file ensures:**
+- ✅ All routes serve the `index.html`
+- ✅ No 404 errors on page refresh
+- ✅ Proper SPA routing
 
-**No vercel.json needed** - Simple HTML sites work out of the box!
+**If still getting 404:**
+- Refresh the Vercel project page
+- Check deployment logs for errors
+- Ensure `index.html` is in root directory ✅
 
-### GitHub Pages
-1. Go to repository Settings → Pages
-2. Select source branch (`main` or `master`)
-3. Site will be live at: `https://saqlain-076.github.io/whitepace-landing-page`
+### Alternative Deployments
 
-### Netlify
-1. **Drag & Drop:** Just drag the project folder to netlify.com
-2. **OR Git Deploy:** Connect GitHub repo
-3. **Settings:** 
-   - Build command: (leave empty)
-   - Publish directory: `/`
+**GitHub Pages:**
+1. Settings → Pages → Source: Deploy from branch `main`
 
-### Manual Hosting
-Upload these files to any web server:
-- `index.html`, `style.css`, `script.js`
-- All other files except `node_modules/`
+**Netlify:**
+1. Drag & drop the project folder to netlify.com
+2. Or connect GitHub repo with default settings
+
+### Test Locally
+```bash
+npm start
+# Opens http://localhost:3000
+```
 
 ## Troubleshooting Vercel
-
-If you still face issues:
-1. **Delete any existing vercel.json** (not needed for static sites)
-2. **Ensure index.html is in root directory** ✅
-3. **Check file names are lowercase** ✅
-4. **No build process required** for HTML/CSS/JS sites
-
-## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
