@@ -14,7 +14,7 @@ A clean, modern SaaS landing page built with pure HTML, CSS, and JavaScript.
 ```
 Framework Preset: Other
 Build Command: [LEAVE EMPTY]
-Output Directory: [LEAVE EMPTY] 
+Output Directory: public
 Install Command: [LEAVE EMPTY]
 Root Directory: ./
 ```
