@@ -2,33 +2,29 @@
 
 A clean, modern SaaS landing page built with pure HTML, CSS, and JavaScript.
 
-## 🚀 VERCEL DEPLOYMENT (ERROR-FREE)
+## 🚀 VERCEL DEPLOYMENT (ZERO CONFIG)
 
 ### **STEP 1: Import Repository**
 1. Go to [vercel.com](https://vercel.com)
 2. Click **"New Project"**
 3. **Import Git Repository:** `https://github.com/saqlain-076/whitepace-landing-page`
 
-### **STEP 2: Configuration**
-**IMPORTANT:** Use these exact settings:
-```
-Framework Preset: Other
-Build Command: [LEAVE EMPTY]
-Output Directory: public
-Install Command: [LEAVE EMPTY]
-Root Directory: ./
-```
-
-### **STEP 3: Deploy**
-- Click **"Deploy"**
-- Wait 30-60 seconds
-- ✅ Your site will be live!
+### **STEP 2: Deploy**
+- Just click **"Deploy"** - No configuration needed!
+- Vercel will auto-detect it as a static site
+- ✅ Your site will be live in 30 seconds!
 
 ### **Why This Works:**
-- ✅ Pure HTML/CSS/JS (no build process)
-- ✅ No configuration files 
-- ✅ Clean package.json
-- ✅ All files in root directory
+- ✅ Pure HTML/CSS/JS in root directory
+- ✅ No configuration files needed
+- ✅ Vercel automatically serves index.html
+- ✅ Zero build process required
+
+### **Alternative: Drag & Drop**
+1. Download ZIP from GitHub
+2. Extract files
+3. Drag the entire folder to Vercel dashboard
+4. Deploy instantly!
 
 ## 🌐 Alternative Deployments
 

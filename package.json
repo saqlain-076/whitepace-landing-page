@@ -1,10 +1,4 @@
 {
   "name": "whitespace-landing-page",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "echo 'Development ready'",
-    "build": "echo 'Build complete'",
-    "start": "echo 'Static site ready'"
-  }
+  "version": "1.0.0"
 }
