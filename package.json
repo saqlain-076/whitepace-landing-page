@@ -1,28 +1,14 @@
 {
   "name": "whitespace-saas-landing",
   "version": "1.0.0",
-  "description": "A modern SaaS landing page built with HTML, CSS, and JavaScript",
+  "description": "A modern SaaS landing page - Whitespace theme",
   "main": "index.html",
   "scripts": {
-    "start": "npx live-server --port=3000 --open",
-    "dev": "npx live-server --port=3000 --open",
-    "build": "echo 'Static site - no build required'",
-    "serve": "npx http-server -p 3000 -o"
+    "dev": "npx live-server --port=3000",
+    "build": "echo 'Static site ready for deployment'",
+    "start": "npx live-server --port=3000"
   },
-  "keywords": [
-    "saas",
-    "landing-page",
-    "whitespace",
-    "html",
-    "css",
-    "javascript",
-    "static-site",
-    "responsive"
-  ],
+  "keywords": ["saas", "landing-page", "whitespace", "static"],
   "author": "Saqlain",
-  "license": "MIT",
-  "devDependencies": {
-    "live-server": "^1.2.2",
-    "http-server": "^14.1.1"
-  }
+  "license": "MIT"
 }
